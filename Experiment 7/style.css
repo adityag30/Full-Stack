@@ -1,0 +1,77 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+.calculator {
+    width: 400px;
+    margin: 50px auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid black;
+    padding-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+h1 {
+    margin-bottom: 15px;
+}
+
+#display {
+    width: 80%;
+    height: 50px;
+    font-size: 20px;
+    margin-bottom: 15px;
+    text-align: right;
+    padding: 10px;
+    border: solid black;
+}
+
+.buttons {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    flex: 1 0 30%;   /* 3 buttons per row */
+    height: 50px;
+    font-size: 18px;
+    border:none;
+    cursor: pointer;
+    border-style: ridge;
+    border-color: black;
+}
+
+/* Number buttons */
+.num {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* Operation buttons */
+.op {
+    background-color: #FF9800;
+    color: white;
+}
+
+/* Clear button */
+.clear {
+    background-color: #F44336;
+    color: white;
+}
+
+/* Equal button */
+.equal {
+    background-color: #2196F3;
+    color: white;
+}

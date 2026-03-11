@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Feedback Form</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .form-container {
+            width: 400px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color:bisque;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+        }
+        textarea {
+            resize: none;
+        }
+        input[type="submit"]:hover{
+            background-color:black;
+        }
+    </style>
+</head>
+<body>
+    <h1><u>Student Feedback Form</u></h1>
+    <form action="Submit.html" method="get" target="_blank" class="form-container">
+        <label for="Student Name">Student Name</label>
+        <input type="text" id="Name" required minlength="3" maxlength="30"><br><br>
+        <label for="University Email">University Email</label>
+        <input type="email" id="email" required pattern="[0-9]+@geu.ac.in" ><br><br>
+        <label for="Course">Select Your Course</label>
+        <select id="Course" name="Course" title="Select Your Course">
+            <option value="SELECT COURSE">--SELECT COURSE--</option>
+            <option value="COMPILER DESIGN">COMPILER DESIGN</option>
+            <option value="MACHINE LEARNING">MACHINE LEARNING</option>
+            <option value="FULL STACK WEB DEV">FULL STACK WEB DEVELOPMENT</option>
+            <option value="SOFTWARE ENGINEERING">SOFTWARE ENGINEERING</option>
+            <option value="CAREER SKILLS">CAREER SKILLS</option>
+            <option value="IMAGE PROCESSING">IMAGE PROCESSING</option>
+        </select><br><br>
+        <label for="Feedback">Feedback/Comments: </label>
+        <textarea rows="4" placeholder="Enter your feedback" ></textarea><br><br>
+        <input style="background-color: orange; color: black; border: solid black; padding: 10px; font-size: 16px; cursor: pointer;
+        border-radius: 10px" type="submit" value="Submit">
+    </form>
+</body>
+</html>

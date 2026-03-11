@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            text-align: center;
+        }
+        table,th,td,tr{
+            border:1px solid black;
+            border-collapse: collapse;
+            padding: 0.5em;
+        }
+        tr:nth-child(even){
+            background-color: cyan;
+        }
+        tr:nth-child(odd){
+            background-color: antiquewhite;
+        }
+        th:nth-child(1){
+            background-color: yellow;
+        }
+        tr.header-row {
+            background-color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h2 align="center">Graphic Era Deemend To be University<br>Time Table of Btech CSE-6th Sem, Section- DS1<br>
+        Academic Year 2025-2026 </h2>
+    <table>
+        <tr class="header-row">
+            <th></th>
+            <th>8:00-8:55</th>
+            <th>9:00-9:55</th>
+            <th>9:55-10:50</th>
+            <th>11:10-12:05</th>
+            <th>12:05-1:00</th>
+            <th>1:00-1:55</th>
+            <th>1:55-2:50</th>
+            <th>3:10-4:05</th>
+        </tr>
+        <tr>
+            <th>Mon</th>
+            <td>Full Stack</td>
+            <td>Break</td>
+            <td>Compiler Design</td>
+            <td>ML</td>
+            <td class="lunch">LUNCH</td>
+            <td colspan="2">Full Stack Lab</td>
+            <td>Elective</td>
+        </tr>
+        <tr>
+            <th>Tue</th>
+            <td>Compiler Design</td>
+            <td>Full Stack</td>
+            <td colspan="2">Machine Learning Lab</td>
+            <td class="lunch">LUNCH</td>
+            <td colspan="2">Compiler Design Lab</td>
+            <td>Elective</td>
+        </tr>
+        <tr>
+            <th>Wed</th>
+            <td>Full Stack</td>
+            <td>ML</td>
+            <td>Compiler Design</td>
+            <td class="lunch">LUNCH</td>
+            <td>Soft Skills</td>
+            <td colspan="2">Full Stack Lab</td>
+            <td>Elective</td>
+        </tr>
+        <tr>
+            <th>Thu</th>
+            <td colspan="2">Compiler Design Lab</td>
+            <td colspan="2">Machine Learning Lab</td>
+            <td>QAR</td>
+            <td class="lunch">LUNCH</td>
+            <td>ML</td>
+            <td>Elective</td>
+        </tr>
+        <tr>
+            <th>Fri</th>
+            <td>Compiler Design</td>
+            <td>Verbal</td>
+            <td>ML</td>
+            <td>Software Engg</td>
+            <td>Full Stack</td>
+            <td class="lunch">LUNCH</td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

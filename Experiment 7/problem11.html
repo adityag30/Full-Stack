@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="calculator">
+    <h1>Simple Calculator</h1>
+    <input type="text" id="display" disabled><br>
+    <div class="buttons">
+        <!-- Numbers -->
+        <button class="num" onclick="calculator.add('7')">7</button>
+        <button class="num" onclick="calculator.add('8')">8</button>
+        <button class="num" onclick="calculator.add('9')">9</button>
+        <br>
+        <button class="num" onclick="calculator.add('4')">4</button>
+        <button class="num" onclick="calculator.add('5')">5</button>
+        <button class="num" onclick="calculator.add('6')">6</button>
+        <br>
+        <button class="num" onclick="calculator.add('1')">1</button>
+        <button class="num" onclick="calculator.add('2')">2</button>
+        <button class="num" onclick="calculator.add('3')">3</button>
+        <br>
+        <button class="num" onclick="calculator.add('0')">0</button>
+        <button class="num" onclick="calculator.add('.')">.</button>
+        <button class="clear" onclick="calculator.clear()">C</button>
+        <br>
+        <!-- Operations -->
+        <button class="op" onclick="calculator.add('+')">+</button>
+        <button class="op" onclick="calculator.add('-')">-</button>
+        <button class="op" onclick="calculator.add('*')">*</button>
+        <br>
+        <button class="op" onclick="calculator.add('/')">/</button>
+        <button class="op" onclick="calculator.add('%')">%</button>
+        <button class="op" onclick="calculator.add('**')">^</button>
+        <br>
+        <button class="equal" onclick="calculator.calculate()">=</button>
+        <br>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

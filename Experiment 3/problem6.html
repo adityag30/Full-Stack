@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>registration page</title>
+    <style>
+        form{
+            background-color: antiquewhite;
+        }
+        input[type="submit"],input[type="reset"]{
+            background-color: aqua;          
+            border-radius: 10%;           
+            padding: 8px 20px;
+            width:80px;
+            height: 35px;
+            cursor: pointer;
+            border: none;
+        }       
+        input[type=submit]:hover{
+            background-color: greenyellow;
+            border-color: black;
+        }
+        input[type=reset]:hover{
+            background-color: red;
+            border-color: black;
+        }
+        input:invalid{
+            border:2px solid skyblue;
+        }
+        input:valid{
+            border:2px solid skyblue;
+        }
+    </style>
+</head> 
+<body>
+    <h1 align="center"><u>Student Course Registration Form</u></h1>
+    <form action="thankyou.html" method="get" target="_blank">
+        <img src="clglogo.png" alt="logo" width="300" height="130" align="right">
+        <label for="USN/ Roll Number">USN/ Roll Number</label>
+        <input type="text" id="Number" pattern="[A-Z][A-Z][0-9][0-9][A-Z][A-Z][A-Z]" ><br><br>
+        <label for="Course">Select Your Course</label>
+        <select id="Course" name="Course" title="Select Your Course">
+            <option value="Basic Python">Basic Python</option>
+            <option value="Machine Learning">Machine Learning</option>
+            <option value="Cloud Computing">Cloud Computing</option>
+            <option value="Data Science">Data Science</option>
+        </select><br><br>
+        <label for="Age">Age</label>
+        <input type="number" id="Age" required minlength="18" maxlength="30"><br><br>
+        <label for="Gender">Gender</label><br>
+        <input type="radio" name="Gender" value="Male">Male<br>
+        <input type="radio" name="Gender" value="Female">Female<br><br>
+        <label for="Resume">Resume</label>
+        <input type="file" id="Resume"><br><br>
+        <input type="submit" placeholder="submit">&nbsp;
+        <input type="reset" placeholder="reset">
+        <marquee direction="left">Graphic Era Deemed to be University, Dehardun</marquee>
+    </form>
+</body>
+</html>

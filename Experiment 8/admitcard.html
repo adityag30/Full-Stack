@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admit Card</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 30px;
+            color: #000;
+        }
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        header img {
+            width: 180px;
+        }
+        header h3 {
+            margin: 0;
+            text-align: center;
+        }
+        hr {
+            margin-top: 15px;
+            margin-bottom: 20px;
+        }
+        .detail-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+        .detail-container div {
+            width: 23%;
+        }
+        .detail-container p {
+            margin: 6px 0;
+        }
+        .detail-container img {
+            width: 90px;
+            height: 110px;
+            border: 1px solid black;
+            display: block;
+            margin-bottom: 10px;
+        }
+        .registrar {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 10px;
+        }
+        .registrar span {
+            border: 2px solid black;
+            padding: 12px 40px;
+            font-weight: bold;
+        }
+        .subjects-instructions {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+            width: 100%;
+        }
+        table {
+            border-collapse: collapse;
+            width: 600px;
+            font-size: 14px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+            font-weight: bold;
+        }
+        .subjects-instructions ul {
+            padding-left: 18px;
+        }
+        .subjects-instructions li {
+            margin-bottom: 6px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 14px;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 8px;
+            background-color: antiquewhite;
+            transition: 0.3s ease;
+        }
+        button:hover {
+            background-color: greenyellow;
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <img width=200px src="clglogo.png" alt="Logo">
+        </div>
+        <div>
+            <h3>ADMIT CARD</h3>
+            <h3>EVEN MID SEM FEB-MARCH</h3>
+        </div>
+    </header>
+    <hr>
+    <!-- DETAILS CONTAINER -->
+    <div class="detail-container">
+        <div>
+            <p><b>Name of Candidate :</b> Aditya Garg</p>
+            <p><b>Father's Name :</b> Mr.Parvesh Kumar</p>
+            <p><b>Roll No :</b> 2023827</p>
+        </div>
+        <div>
+            <p><b>Program :</b>B.Tech</p>
+            <p><b>Semester :</b>VI</p>
+            <p><b>Enrollment no :</b>GE-23021722</p>
+        </div>
+        <div>
+            <p><b>Branch :</b>CSE (AI & DS)</p>
+            <p><b>Sec :</b> DS1</p>
+        </div>
+        <div>
+            <img src="image.jpg" alt="student-img">
+            <p><b>Student Signature:</b> Aditya Garg</p>
+        </div>
+    </div>
+    <br>
+    <!-- TABLE AND INFORMATION CONTAINER -->
+    <div class="subjects-instructions">
+        <!-- Table container -->
+        <div>
+            <table border="1" cellspacing="0" cellpadding="8">
+                <thead>
+                    <tr>
+                        <th>S.No.</th>
+                        <th>Subject Code</th>
+                        <th>Subject Name</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>GP</td>
+                        <td>General Proficiency</td>
+                        <td>Eligible</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>PCS-601</td>
+                        <td>Compiler Design Lab</td>
+                        <td>Eligible</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>PCS-662</td>
+                        <td>Machine Learning Lab</td>
+                        <td>Eligible</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>PCS-693</td>
+                        <td>Web Development Lab</td>
+                        <td>Eligible</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>TCS-601</td>
+                        <td>Compiler Design</td>
+                        <td>Eligible</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>TCS-611</td>
+                        <td>Software Engineering</td>
+                        <td>Eligible</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>TCS-662</td>
+                        <td>Machine Learning</td>
+                        <td>Eligible</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>TCS-693</td>
+                        <td>Full Stack Web Development</td>
+                        <td>Eligible</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>XCS-601</td>
+                        <td>Career Skills</td>
+                        <td>Eligible</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>TCS-691</td>
+                        <td>Image Processing and Computer Vision</td>
+                        <td>Eligible</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <!-- Inforation -->
+        <div>
+            <p><b><i><u>Important Instructions</u></i></b></p>
+            <ul>
+                <li><p>Students should report to the examination center wearing official University Uniform.</p></li>
+                <li><p>Students must carry their Identity Card and Admit Card to enter the Examination Hall.</p></li>
+                <li><p>Students must be seated in their respective seats at least 15 minutes prior to the commencement of the examination.</p></li>
+                <li><p>Students are not allowed to carry bags, mobile phones, smart watches.</p></li>
+                <li><p>Students shall not possess any written material on their hands, body, clothing.</p></li>
+                <li><p>Students shall not possess mobile phones or any electronic gadgets.</p></li>
+                <li><p>University/Examination center will not be responsible for student belongings.</p></li>
+                <li><p>Students must ensure they fill the correct information in their answer booklets.</p></li>
+            </ul>
+            <p><b>Note : Permission for end term examinations is subject to Fee due clearance/Minimum attendance criteria</b></p>
+        </div>
+    </div>
+    <br>
+    <p><b>Examination Center:</b> Graphic Era (Deemed to be University)</p>
+    <center><button onclick="window.print()">Print</button>
+    <button onclick="window.close()">Close</button></center>
+</body>
+</html>
