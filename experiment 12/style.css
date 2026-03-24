@@ -1,0 +1,21 @@
+body {
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    border: 2px solid black;
+    width: fit-content;
+    font-size: large;
+    border-radius: 20px;
+    padding: 30px;
+}
+input[type='submit'] {
+    padding: 10px;
+    width: 150px;
+    background-color: aliceblue;
+}
+input[type='submit']:hover {
+    background-color: burlywood;
+    cursor: pointer;
+}
